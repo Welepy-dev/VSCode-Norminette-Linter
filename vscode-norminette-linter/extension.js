@@ -23,6 +23,7 @@ function activate(context) {
 
             // Create a range for the decoration (end of the line)
             const range = new vscode.Range(new vscode.Position(line, charCount), new vscode.Position(line, charCount));
+            if (charCount > 80){
             decorations.push({
                 range,
                 renderOptions: {
@@ -31,6 +32,7 @@ function activate(context) {
                     }
                 }
             });
+            }
         }
 
         editor.setDecorations(inlineDecorationType, decorations);
@@ -93,3 +95,6 @@ module.exports = {
     activate,
     deactivate
 };
+
+
+//add diagnostics
