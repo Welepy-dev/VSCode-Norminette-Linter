@@ -1,6 +1,6 @@
 {
-  "name": "vscode-norminete-linter",
-  "displayName": "VSCode-Norminete-Linter",
+  "name": "vscode-norminette-linter",
+  "displayName": "VSCode-Norminette-Linter",
   "description": "Linter for 42's Norminette",
   "version": "0.0.1",
   "engines": {
@@ -9,13 +9,19 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished",
+    "onDidChangeActiveTextEditor",
+    "onDidChangeTextDocument"
+  ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "vscode-norminete-linter.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "extension.showInfo",
+      "title": "Show Information"
+    }
+  ]
   },
   "scripts": {
     "lint": "eslint .",

@@ -1,6 +1,6 @@
-# vscode-norminete-linter README
+# vscode-norminette-linter README
 
-This is the README for your extension "vscode-norminete-linter". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "vscode-norminette-linter". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
